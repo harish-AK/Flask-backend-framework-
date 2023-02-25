@@ -20,3 +20,8 @@ def about():
 def capitalize(word):#The URL variable <word> passes a keyword argument to the capitalize() view function
     return '<h1>{}</h1>'.format(escape(word.capitalize())) # if user submits malicious js it will keep browser safe
 #what ever we type in the url will be displayed in h1 format
+# ...
+#adding two numbers
+@app.route('/add/<int:n1>/<int:n2>/')
+def add(n1, n2):
+    return '<h1>{}</h1>'.format(n1 + n2)
