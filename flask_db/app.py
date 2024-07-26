@@ -13,7 +13,7 @@ client = MongoClient('localhost', 27017)  #mongo client-which you use to create 
 
 db = client.flask_db
 todos = db.todos #todo is a collection
-client = MongoClient('localhost', 27017, username='root', password='1234')
+client = MongoClient('localhost', 27017, username='root', password='')
 
 # ...
 
